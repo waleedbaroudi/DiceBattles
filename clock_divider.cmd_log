@@ -1,0 +1,4 @@
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhi" -module clock_divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clock_divider.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhi" -module clock_divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clock_divider.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhi" -module clock_divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clock_divider.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhi" -module clock_divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work clock_divider.vhd 

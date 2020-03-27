@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 21 15:33:18 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P40" LEVEL 1;
+COMP "SevenSegBusMod<0>" LOCATE = SITE "P70" LEVEL 1;
+COMP "SevenSegBusMod<1>" LOCATE = SITE "P64" LEVEL 1;
+COMP "SevenSegBusMod<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "SevenSegBusMod<3>" LOCATE = SITE "P73" LEVEL 1;
+COMP "SevenSegBusMod<4>" LOCATE = SITE "P72" LEVEL 1;
+COMP "SevenSegBusMod<5>" LOCATE = SITE "P65" LEVEL 1;
+COMP "SevenSegBusMod<6>" LOCATE = SITE "P62" LEVEL 1;
+COMP "SevenSegBusMod<7>" LOCATE = SITE "P71" LEVEL 1;
+COMP "reset" LOCATE = SITE "P36" LEVEL 1;
+COMP "SevenSegControlMod<0>" LOCATE = SITE "P50" LEVEL 1;
+COMP "SevenSegControlMod<1>" LOCATE = SITE "P49" LEVEL 1;
+COMP "SevenSegControlMod<2>" LOCATE = SITE "P52" LEVEL 1;
+COMP "SevenSegControlMod<3>" LOCATE = SITE "P56" LEVEL 1;
+COMP "SevenSegControlMod<4>" LOCATE = SITE "P59" LEVEL 1;
+COMP "SevenSegControlMod<5>" LOCATE = SITE "P57" LEVEL 1;
+COMP "SevenSegControlMod<6>" LOCATE = SITE "P60" LEVEL 1;
+COMP "SevenSegControlMod<7>" LOCATE = SITE "P61" LEVEL 1;
+COMP "highscore<0>" LOCATE = SITE "P15" LEVEL 1;
+COMP "highscore<1>" LOCATE = SITE "P12" LEVEL 1;
+COMP "highscore<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "highscore<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "player1b" LOCATE = SITE "P34" LEVEL 1;
+COMP "player2b" LOCATE = SITE "P32" LEVEL 1;
+SCHEMATIC END;
+

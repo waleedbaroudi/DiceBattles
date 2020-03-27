@@ -1,0 +1,78 @@
+V3 39
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd" 2019/11/29.04:23:29 P.20131013
+EN work/clock_divider 1576931586 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/clock_divider/Behavioral 1576931587 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd" \
+      EN work/clock_divider 1576931586
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" 2019/11/28.01:08:31 P.20131013
+EN work/comparator 1576931592 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/comparator/Behavioral 1576931593 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" \
+      EN work/comparator 1576931592
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" 2019/12/21.15:32:54 P.20131013
+EN work/display_controller 1576931594 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/display_controller/Behavioral 1576931595 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" \
+      EN work/display_controller 1576931594
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" 2019/12/21.15:32:54 P.20131013
+EN work/main 1576931596 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/main/Behavioral 1576931597 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" \
+      EN work/main 1576931596 CP sevenSegment CP clock_divider CP debounce \
+      CP scoreDecoder CP comparator CP display_controller
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" 2019/11/29.01:38:16 P.20131013
+EN work/scoreDecoder 1576931590 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/scoreDecoder/Behavioral 1576931591 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" \
+      EN work/scoreDecoder 1576931590
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/debouncing/debounce_v1.vhd" 2019/09/18.03:00:41 P.20131013
+EN work/debounce 1576931588 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/debouncing/debounce_v1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/logic 1576931589 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/debouncing/debounce_v1.vhd" \
+      EN work/debounce 1576931588
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/decoder.vhd" 2019/11/29.03:03:27 P.20131013
+EN work/decoder 1576931582 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/decoder.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/decoder/Behavioral 1576931583 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/decoder.vhd" \
+      EN work/decoder 1576931582
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" 2019/09/09.22:06:20 P.20131013
+EN work/driver 1576931580 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/std_logic_arith 1381692177
+AR work/driver/Behavioral 1576931581 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" \
+      EN work/driver 1576931580
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/sevenSegment.vhd" 2019/09/09.22:02:48 P.20131013
+EN work/sevenSegment 1576931584 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/sevenSegment.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sevenSegment/Behavioral 1576931585 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/sevenSegment.vhd" \
+      EN work/sevenSegment 1576931584 CP work/slowerClock CP work/driver \
+      CP work/decoder
+FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/slowerClock.vhd" 2019/09/09.22:13:05 P.20131013
+EN work/slowerClock 1576931578 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/slowerClock.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/slowerClock/Behavioral 1576931579 \
+      FL "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/slowerClock.vhd" \
+      EN work/slowerClock 1576931578

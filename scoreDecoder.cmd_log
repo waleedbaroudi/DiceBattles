@@ -1,0 +1,4 @@
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhi" -module scoreDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work scoreDecoder.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhi" -module scoreDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work scoreDecoder.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhi" -module scoreDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work scoreDecoder.vhd 
+vhdtdtfi -prj DiceBattles -o "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhi" -module scoreDecoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work scoreDecoder.vhd 

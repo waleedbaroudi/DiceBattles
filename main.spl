@@ -1,0 +1,10 @@
+[Inputs]
+clk
+player1b
+player2b
+reset
+=highscore[3:0]=
+[Outputs]
+=SevenSegControlMod[7:0]=
+=SevenSegBusMod[7:0]=
+[BiDir]

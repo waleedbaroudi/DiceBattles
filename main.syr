@@ -1,0 +1,1003 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/slowerClock.vhd" in Library work.
+Architecture behavioral of Entity slowerclock is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" Line 52. No sensitivity list and no wait in the process
+Architecture behavioral of Entity driver is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/decoder.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/sevenSegment.vhd" in Library work.
+Architecture behavioral of Entity sevensegment is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd" in Library work.
+Architecture behavioral of Entity clock_divider is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/debouncing/debounce_v1.vhd" in Library work.
+Architecture logic of Entity debounce is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" Line 44. No sensitivity list and no wait in the process
+Architecture behavioral of Entity scoredecoder is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" in Library work.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" Line 58. No sensitivity list and no wait in the process
+Architecture behavioral of Entity comparator is up to date.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" in Library work.
+Entity <display_controller> compiled.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" Line 65. No sensitivity list and no wait in the process
+Entity <display_controller> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" in Library work.
+Entity <main> compiled.
+WARNING:HDLParsers:1406 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" Line 148. No sensitivity list and no wait in the process
+Entity <main> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sevenSegment> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock_divider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <logic>) with generics.
+	counter_size = 19
+
+Analyzing hierarchy for entity <scoreDecoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <comparator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display_controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <slowerClock> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <driver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <decoder> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" line 157: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <slowClock>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd" line 148: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <hexaHighScore>
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing Entity <sevenSegment> in library <work> (Architecture <behavioral>).
+Entity <sevenSegment> analyzed. Unit <sevenSegment> generated.
+
+Analyzing Entity <slowerClock> in library <work> (Architecture <Behavioral>).
+Entity <slowerClock> analyzed. Unit <slowerClock> generated.
+
+Analyzing Entity <driver> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd" line 54: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk>
+Entity <driver> analyzed. Unit <driver> generated.
+
+Analyzing Entity <decoder> in library <work> (Architecture <Behavioral>).
+Entity <decoder> analyzed. Unit <decoder> generated.
+
+Analyzing Entity <clock_divider> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd" line 30: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mode>
+Entity <clock_divider> analyzed. Unit <clock_divider> generated.
+
+Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
+	counter_size = 19
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <scoreDecoder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" line 66: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <newclk>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd" line 44: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <binaryScore>, <returned_score>
+Entity <scoreDecoder> analyzed. Unit <scoreDecoder> generated.
+
+Analyzing Entity <comparator> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <ag>, <bg>
+Entity <comparator> analyzed. Unit <comparator> generated.
+
+Analyzing Entity <display_controller> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" line 84: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sClk>
+WARNING:Xst:819 - "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd" line 65: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mode>, <P1T>, <P2T>, <P1S>, <P2S>, <HS>, <currentA>, <currentB>, <currentC>, <currentF>, <currentG>, <currentH>
+Entity <display_controller> analyzed. Unit <display_controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/clock_divider.vhd".
+    Found 32-bit up accumulator for signal <clkCounter>.
+    Found 1-bit register for signal <temp>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clock_divider> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/debouncing/debounce_v1.vhd".
+    Found 1-bit register for signal <result>.
+    Found 20-bit up counter for signal <counter_out>.
+    Found 1-bit xor2 for signal <counter_set>.
+    Found 2-bit register for signal <flipflops>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <scoreDecoder>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/scoreDecoder.vhd".
+    Found 4-bit register for signal <returned_score>.
+    Found 1-bit register for signal <temp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <scoreDecoder> synthesized.
+
+
+Synthesizing Unit <comparator>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/comparator.vhd".
+WARNING:Xst:647 - Input <A<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <eq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <ag$xor0000>.
+Unit <comparator> synthesized.
+
+
+Synthesizing Unit <display_controller>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/display_controller.vhd".
+    Found finite state machine <FSM_0> for signal <currentC>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 33                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 5                                              |
+    | Clock              | sClk                      (rising_edge)        |
+    | Clock enable       | currentC$not0000          (positive)           |
+    | Reset              | currentC$cmp_eq0000       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 1100                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <currentG>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | sClk                      (rising_edge)        |
+    | Clock enable       | currentG$not0000          (positive)           |
+    | Reset              | currentC$cmp_eq0000       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 1100                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <temp>.
+    Found 4-bit register for signal <currentA>.
+    Found 4-bit register for signal <currentB>.
+    Found 4-bit register for signal <currentF>.
+    Found 4-bit register for signal <currentH>.
+    Found 2-bit register for signal <temp>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   8 D-type flip-flop(s).
+Unit <display_controller> synthesized.
+
+
+Synthesizing Unit <slowerClock>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/slowerClock.vhd".
+    Found 28-bit up accumulator for signal <clkCounter>.
+    Found 1-bit register for signal <temp>.
+    Found 28-bit comparator less for signal <temp$cmp_lt0000> created at line 48.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <slowerClock> synthesized.
+
+
+Synthesizing Unit <driver>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/driver.vhd".
+    Found 8x8-bit ROM for signal <sevenSegNumber>.
+    Found 4-bit 8-to-1 multiplexer for signal <sevenSegValue>.
+    Found 3-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 Multiplexer(s).
+Unit <driver> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/decoder.vhd".
+    Found 16x8-bit ROM for signal <outValue>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <sevenSegment>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/sources/seven_segment/sevenSegment.vhd".
+Unit <sevenSegment> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/Users/walee/Desktop/UNIV materials/ELEC204/Projects/DiceBattles/main.vhd".
+    Using one-hot encoding for signal <game_over>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <game_over> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <game_over> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 3-bit register for signal <game_over>.
+    Found 4-bit comparator greatequal for signal <game_over$cmp_ge0000> created at line 167.
+    Found 4-bit comparator greatequal for signal <game_over$cmp_ge0001> created at line 168.
+    Found 4-bit up counter for signal <player1score>.
+    Found 4-bit up counter for signal <player1throw>.
+    Found 4-bit up counter for signal <player2score>.
+    Found 4-bit subtractor for signal <player2score$addsub0000> created at line 204.
+    Found 4-bit comparator equal for signal <player2score$cmp_eq0000> created at line 204.
+    Found 4-bit comparator equal for signal <player2score$cmp_eq0001> created at line 204.
+    Found 4-bit up counter for signal <player2throw>.
+    Found 1-bit register for signal <rolling>.
+    Found 32-bit register for signal <selected_mode>.
+    Summary:
+	inferred   4 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 7
+ 20-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Accumulators                                         : 4
+ 28-bit up accumulator                                 : 1
+ 32-bit up accumulator                                 : 3
+# Registers                                            : 26
+ 1-bit register                                        : 20
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 3
+# Comparators                                          : 5
+ 28-bit comparator less                                : 1
+ 4-bit comparator equal                                : 2
+ 4-bit comparator greatequal                           : 2
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <Inst_display_controller/currentG/FSM> on signal <currentG[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1100  | 00
+ 1101  | 01
+ 1110  | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_display_controller/currentC/FSM> on signal <currentC[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1100  | 00
+ 1101  | 01
+ 1110  | 10
+-------------------
+WARNING:Xst:1293 - FF/Latch <selected_mode_31> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_30> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_29> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_28> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_27> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_26> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_25> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_24> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_23> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_22> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_21> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_20> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_19> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_18> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_17> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_16> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_15> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_14> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_13> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_12> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_11> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_10> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_9> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_8> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_7> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_6> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_5> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_4> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 7
+ 20-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Accumulators                                         : 4
+ 28-bit up accumulator                                 : 1
+ 32-bit up accumulator                                 : 3
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 5
+ 28-bit comparator less                                : 1
+ 4-bit comparator equal                                : 2
+ 4-bit comparator greatequal                           : 2
+# Multiplexers                                         : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <selected_mode_31> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_30> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_29> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_28> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_27> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_26> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_25> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_24> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_23> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_22> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_21> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_20> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_19> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_18> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_17> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_16> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_15> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_14> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_13> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_12> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_11> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_10> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_9> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_8> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_7> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_6> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_5> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_4> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <selected_mode_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <temp_1> of sequential type is unconnected in block <display_controller>.
+WARNING:Xst:1293 - FF/Latch <Inst_clock_divider/clkCounter_0> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_clock_divider/clkCounter_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ending_clock_divider/clkCounter_0> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ending_clock_divider/clkCounter_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ending_clock_divider/clkCounter_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <flasher_clock_divider/clkCounter_0> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <flasher_clock_divider/clkCounter_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_0> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_1> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_2> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_3> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_4> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_5> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sevensegment_instance/SlowClock/clkCounter_6> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <main> ...
+
+Optimizing unit <scoreDecoder> ...
+
+Optimizing unit <display_controller> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 31.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 211
+ Flip-Flops                                            : 211
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 736
+#      GND                         : 1
+#      INV                         : 20
+#      LUT1                        : 142
+#      LUT2                        : 16
+#      LUT2_D                      : 3
+#      LUT2_L                      : 2
+#      LUT3                        : 80
+#      LUT3_D                      : 2
+#      LUT3_L                      : 6
+#      LUT4                        : 112
+#      LUT4_D                      : 8
+#      LUT4_L                      : 5
+#      MUXCY                       : 174
+#      MUXF5                       : 10
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 150
+# FlipFlops/Latches                : 211
+#      FD                          : 6
+#      FDCE                        : 4
+#      FDCP                        : 12
+#      FDCPE                       : 8
+#      FDE                         : 7
+#      FDPE                        : 1
+#      FDR                         : 112
+#      FDRE                        : 59
+#      FDSE                        : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 7
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                      204  out of    704    28%  
+ Number of Slice Flip Flops:            211  out of   1408    14%  
+ Number of 4 input LUTs:                396  out of   1408    28%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of     68    35%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+---------------------------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)                       | Load  |
+------------------------------------+---------------------------------------------+-------+
+Inst_clock_divider/temp1            | BUFG                                        | 22    |
+clk                                 | BUFGP                                       | 160   |
+sevensegment_instance/SlowClock/temp| NONE(sevensegment_instance/Driver/counter_1)| 3     |
+flasher_clock_divider/temp          | NONE(scoreDecoder_instance/returned_score_3)| 5     |
+ending_clock_divider/temp1          | BUFG                                        | 21    |
+------------------------------------+---------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+Control Signal                                                                                      | Buffer(FF name)                                | Load  |
+----------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+Inst_display_controller/currentC_cmp_eq0000(Inst_display_controller/currentC_cmp_eq00001:O)         | NONE(Inst_display_controller/currentC_FSM_FFd1)| 5     |
+Inst_display_controller/currentA_0_and0000(Inst_display_controller/currentA_0_and00001:O)           | NONE(Inst_display_controller/currentA_0)       | 1     |
+Inst_display_controller/currentA_0_and0001(Inst_display_controller/currentA_0_and00011:O)           | NONE(Inst_display_controller/currentA_0)       | 1     |
+Inst_display_controller/currentA_1_and0000(Inst_display_controller/currentA_1_and00001:O)           | NONE(Inst_display_controller/currentA_1)       | 1     |
+Inst_display_controller/currentA_1_and0001(Inst_display_controller/currentA_1_and00011:O)           | NONE(Inst_display_controller/currentA_1)       | 1     |
+Inst_display_controller/currentA_2_and0000(Inst_display_controller/currentA_2_and00001:O)           | NONE(Inst_display_controller/currentA_2)       | 1     |
+Inst_display_controller/currentA_2_and0001(Inst_display_controller/currentA_2_and00011:O)           | NONE(Inst_display_controller/currentA_2)       | 1     |
+Inst_display_controller/currentA_3_and0000(Inst_display_controller/currentA_3_and00001:O)           | NONE(Inst_display_controller/currentA_3)       | 1     |
+Inst_display_controller/currentA_3_and0001(Inst_display_controller/currentA_3_and00011:O)           | NONE(Inst_display_controller/currentA_3)       | 1     |
+Inst_display_controller/currentB_0_and0000(Inst_display_controller/currentB_0_and00001:O)           | NONE(Inst_display_controller/currentB_0)       | 1     |
+Inst_display_controller/currentB_0_and0001(Inst_display_controller/currentB_0_and00011:O)           | NONE(Inst_display_controller/currentB_0)       | 1     |
+Inst_display_controller/currentB_1_and0000(Inst_display_controller/currentB_1_and00001:O)           | NONE(Inst_display_controller/currentB_1)       | 1     |
+Inst_display_controller/currentB_1_and0001(Inst_display_controller/currentB_1_and00011:O)           | NONE(Inst_display_controller/currentB_1)       | 1     |
+Inst_display_controller/currentB_2_and0000(Inst_display_controller/currentB_2_and00001:O)           | NONE(Inst_display_controller/currentB_2)       | 1     |
+Inst_display_controller/currentB_2_and0001(Inst_display_controller/currentB_2_and00011:O)           | NONE(Inst_display_controller/currentB_2)       | 1     |
+Inst_display_controller/currentB_3_and0000(Inst_display_controller/currentB_3_and00001:O)           | NONE(Inst_display_controller/currentB_3)       | 1     |
+Inst_display_controller/currentB_3_and0001(Inst_display_controller/currentB_3_and00011:O)           | NONE(Inst_display_controller/currentB_3)       | 1     |
+Inst_display_controller/currentF_0__and0000(Inst_display_controller/currentF_0__and00001:O)         | NONE(Inst_display_controller/currentF_0)       | 1     |
+Inst_display_controller/currentF_0__and0001(Inst_display_controller/currentF_0__and00011:O)         | NONE(Inst_display_controller/currentF_0)       | 1     |
+Inst_display_controller/currentF_1__and0000(Inst_display_controller/currentF_1__and00001:O)         | NONE(Inst_display_controller/currentF_1)       | 1     |
+Inst_display_controller/currentF_1__and0001(Inst_display_controller/currentF_1__and00011:O)         | NONE(Inst_display_controller/currentF_1)       | 1     |
+Inst_display_controller/currentF_2__and0000(Inst_display_controller/currentF_2__and00001:O)         | NONE(Inst_display_controller/currentF_2)       | 1     |
+Inst_display_controller/currentF_2__and0001(Inst_display_controller/currentF_2__and00011:O)         | NONE(Inst_display_controller/currentF_2)       | 1     |
+Inst_display_controller/currentF_3__and0000(Inst_display_controller/currentF_3__and00001:O)         | NONE(Inst_display_controller/currentF_3)       | 1     |
+Inst_display_controller/currentF_3__and0001(Inst_display_controller/currentF_3__and00011:O)         | NONE(Inst_display_controller/currentF_3)       | 1     |
+Inst_display_controller/currentH_0__and0000(Inst_display_controller/currentH_0__and00001:O)         | NONE(Inst_display_controller/currentH_0)       | 1     |
+Inst_display_controller/currentH_0__and0001(Inst_display_controller/currentH_0__and00011:O)         | NONE(Inst_display_controller/currentH_0)       | 1     |
+Inst_display_controller/currentH_1__and0000(Inst_display_controller/currentH_1__and00001:O)         | NONE(Inst_display_controller/currentH_1)       | 1     |
+Inst_display_controller/currentH_1__and0001(Inst_display_controller/currentH_1__and00011:O)         | NONE(Inst_display_controller/currentH_1)       | 1     |
+Inst_display_controller/currentH_2__and0000(Inst_display_controller/currentH_2__and00001:O)         | NONE(Inst_display_controller/currentH_2)       | 1     |
+Inst_display_controller/currentH_2__and0001(Inst_display_controller/currentH_2__and00011:O)         | NONE(Inst_display_controller/currentH_2)       | 1     |
+Inst_display_controller/currentH_3__and0000(Inst_display_controller/currentH_3__and00001:O)         | NONE(Inst_display_controller/currentH_3)       | 1     |
+Inst_display_controller/currentH_3__and0001(Inst_display_controller/currentH_3__and00011:O)         | NONE(Inst_display_controller/currentH_3)       | 1     |
+scoreDecoder_instance/returned_score_0__and0000(scoreDecoder_instance/returned_score_0__and000011:O)| NONE(scoreDecoder_instance/returned_score_0)   | 1     |
+scoreDecoder_instance/returned_score_0__or0000(scoreDecoder_instance/returned_score_0__or000011:O)  | NONE(scoreDecoder_instance/returned_score_0)   | 1     |
+scoreDecoder_instance/returned_score_1__and0000(scoreDecoder_instance/returned_score_1__and000011:O)| NONE(scoreDecoder_instance/returned_score_1)   | 1     |
+scoreDecoder_instance/returned_score_1__or0000(scoreDecoder_instance/returned_score_1__or000011:O)  | NONE(scoreDecoder_instance/returned_score_1)   | 1     |
+scoreDecoder_instance/returned_score_2__and0000(scoreDecoder_instance/returned_score_2__and000011:O)| NONE(scoreDecoder_instance/returned_score_2)   | 1     |
+scoreDecoder_instance/returned_score_2__or0000(scoreDecoder_instance/returned_score_2__or000011:O)  | NONE(scoreDecoder_instance/returned_score_2)   | 1     |
+scoreDecoder_instance/returned_score_3__and0000(scoreDecoder_instance/returned_score_3__and000011:O)| NONE(scoreDecoder_instance/returned_score_3)   | 1     |
+scoreDecoder_instance/returned_score_3__or0000(scoreDecoder_instance/returned_score_3__or000011:O)  | NONE(scoreDecoder_instance/returned_score_3)   | 1     |
+----------------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.614ns (Maximum Frequency: 178.112MHz)
+   Minimum input arrival time before clock: 3.855ns
+   Maximum output required time after clock: 9.717ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_clock_divider/temp1'
+  Clock period: 5.614ns (frequency: 178.112MHz)
+  Total number of paths / destination ports: 331 / 47
+-------------------------------------------------------------------------
+Delay:               5.614ns (Levels of Logic = 4)
+  Source:            player2score_2 (FF)
+  Destination:       player1score_0 (FF)
+  Source Clock:      Inst_clock_divider/temp1 rising
+  Destination Clock: Inst_clock_divider/temp1 rising
+
+  Data Path: player2score_2 to player1score_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.495   0.699  player2score_2 (player2score_2)
+     LUT4:I3->O            1   0.561   0.380  player2score_or0000127_SW0 (N73)
+     LUT4:I2->O            1   0.561   0.359  player2score_or0000127 (player2score_or0000127)
+     LUT4:I3->O            1   0.561   0.359  player2score_or0000161 (player2score_or0000161)
+     LUT4:I3->O            8   0.561   0.643  player2score_or0000300 (player2score_or0000)
+     FDRE:R                    0.435          player1score_0
+    ----------------------------------------
+    Total                      5.614ns (3.174ns logic, 2.440ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.673ns (frequency: 213.997MHz)
+  Total number of paths / destination ports: 5297 / 353
+-------------------------------------------------------------------------
+Delay:               4.673ns (Levels of Logic = 30)
+  Source:            Inst_clock_divider/clkCounter_3 (FF)
+  Destination:       Inst_clock_divider/clkCounter_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_clock_divider/clkCounter_3 to Inst_clock_divider/clkCounter_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.495   0.488  Inst_clock_divider/clkCounter_3 (Inst_clock_divider/clkCounter_3)
+     LUT1:I0->O            1   0.561   0.000  Inst_clock_divider/Maccum_clkCounter_cy<3>_rt (Inst_clock_divider/Maccum_clkCounter_cy<3>_rt)
+     MUXCY:S->O            1   0.523   0.000  Inst_clock_divider/Maccum_clkCounter_cy<3> (Inst_clock_divider/Maccum_clkCounter_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<4> (Inst_clock_divider/Maccum_clkCounter_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<5> (Inst_clock_divider/Maccum_clkCounter_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<6> (Inst_clock_divider/Maccum_clkCounter_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<7> (Inst_clock_divider/Maccum_clkCounter_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<8> (Inst_clock_divider/Maccum_clkCounter_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<9> (Inst_clock_divider/Maccum_clkCounter_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<10> (Inst_clock_divider/Maccum_clkCounter_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<11> (Inst_clock_divider/Maccum_clkCounter_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<12> (Inst_clock_divider/Maccum_clkCounter_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<13> (Inst_clock_divider/Maccum_clkCounter_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<14> (Inst_clock_divider/Maccum_clkCounter_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<15> (Inst_clock_divider/Maccum_clkCounter_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<16> (Inst_clock_divider/Maccum_clkCounter_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<17> (Inst_clock_divider/Maccum_clkCounter_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<18> (Inst_clock_divider/Maccum_clkCounter_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<19> (Inst_clock_divider/Maccum_clkCounter_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<20> (Inst_clock_divider/Maccum_clkCounter_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<21> (Inst_clock_divider/Maccum_clkCounter_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<22> (Inst_clock_divider/Maccum_clkCounter_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<23> (Inst_clock_divider/Maccum_clkCounter_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<24> (Inst_clock_divider/Maccum_clkCounter_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<25> (Inst_clock_divider/Maccum_clkCounter_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<26> (Inst_clock_divider/Maccum_clkCounter_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<27> (Inst_clock_divider/Maccum_clkCounter_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<28> (Inst_clock_divider/Maccum_clkCounter_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<29> (Inst_clock_divider/Maccum_clkCounter_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  Inst_clock_divider/Maccum_clkCounter_cy<30> (Inst_clock_divider/Maccum_clkCounter_cy<30>)
+     XORCY:CI->O           1   0.654   0.000  Inst_clock_divider/Maccum_clkCounter_xor<31> (Result<31>)
+     FDR:D                     0.197          Inst_clock_divider/clkCounter_31
+    ----------------------------------------
+    Total                      4.673ns (4.185ns logic, 0.488ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sevensegment_instance/SlowClock/temp'
+  Clock period: 2.392ns (frequency: 418.141MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.392ns (Levels of Logic = 1)
+  Source:            sevensegment_instance/Driver/counter_0 (FF)
+  Destination:       sevensegment_instance/Driver/counter_1 (FF)
+  Source Clock:      sevensegment_instance/SlowClock/temp rising
+  Destination Clock: sevensegment_instance/SlowClock/temp rising
+
+  Data Path: sevensegment_instance/Driver/counter_0 to sevensegment_instance/Driver/counter_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             27   0.495   1.138  sevensegment_instance/Driver/counter_0 (sevensegment_instance/Driver/counter_0)
+     LUT2:I1->O            1   0.562   0.000  sevensegment_instance/Driver/Mcount_counter_xor<1>11 (Result<1>7)
+     FD:D                      0.197          sevensegment_instance/Driver/counter_1
+    ----------------------------------------
+    Total                      2.392ns (1.254ns logic, 1.138ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'flasher_clock_divider/temp'
+  Clock period: 2.062ns (frequency: 484.884MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               2.062ns (Levels of Logic = 1)
+  Source:            scoreDecoder_instance/temp (FF)
+  Destination:       scoreDecoder_instance/temp (FF)
+  Source Clock:      flasher_clock_divider/temp rising
+  Destination Clock: flasher_clock_divider/temp rising
+
+  Data Path: scoreDecoder_instance/temp to scoreDecoder_instance/temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.495   0.451  scoreDecoder_instance/temp (scoreDecoder_instance/temp)
+     INV:I->O              1   0.562   0.357  scoreDecoder_instance/temp_not00011_INV_0 (scoreDecoder_instance/temp_not0001)
+     FDE:D                     0.197          scoreDecoder_instance/temp
+    ----------------------------------------
+    Total                      2.062ns (1.254ns logic, 0.808ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ending_clock_divider/temp1'
+  Clock period: 5.238ns (frequency: 190.911MHz)
+  Total number of paths / destination ports: 626 / 31
+-------------------------------------------------------------------------
+Delay:               5.238ns (Levels of Logic = 5)
+  Source:            Inst_display_controller/currentF_3 (FF)
+  Destination:       Inst_display_controller/currentB_1 (FF)
+  Source Clock:      ending_clock_divider/temp1 rising
+  Destination Clock: ending_clock_divider/temp1 rising
+
+  Data Path: Inst_display_controller/currentF_3 to Inst_display_controller/currentB_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            6   0.495   0.677  Inst_display_controller/currentF_3 (Inst_display_controller/currentF_3)
+     LUT4:I0->O            8   0.561   0.666  Inst_display_controller/currentC_cmp_eq00011 (Inst_display_controller/currentC_cmp_eq0001)
+     LUT4_D:I2->LO         1   0.561   0.123  Inst_display_controller/currentA_0_mux000041 (N101)
+     LUT3:I2->O            4   0.561   0.607  Inst_display_controller/currentB_1_mux000031 (Inst_display_controller/N24)
+     LUT4:I0->O            1   0.561   0.000  Inst_display_controller/currentB_1_mux000067_F (N91)
+     MUXF5:I0->O           1   0.229   0.000  Inst_display_controller/currentB_1_mux000067 (Inst_display_controller/currentB_1_mux0000)
+     FDCP:D                    0.197          Inst_display_controller/currentB_1
+    ----------------------------------------
+    Total                      5.238ns (3.165ns logic, 2.073ns route)
+                                       (60.4% logic, 39.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_clock_divider/temp1'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              3.855ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       rolling (FF)
+  Destination Clock: Inst_clock_divider/temp1 rising
+
+  Data Path: reset to rolling
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   0.824   0.930  reset_IBUF (reset_IBUF)
+     LUT3:I1->O            1   0.562   0.465  rolling_not0001_SW0 (N40)
+     LUT4:I0->O            1   0.561   0.357  rolling_not0001 (rolling_not0001)
+     FDE:CE                    0.156          rolling
+    ----------------------------------------
+    Total                      3.855ns (2.103ns logic, 1.752ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.378ns (Levels of Logic = 1)
+  Source:            player2b (PAD)
+  Destination:       player2_debounce/flipflops_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: player2b to player2_debounce/flipflops_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.824   0.357  player2b_IBUF (player2b_IBUF)
+     FD:D                      0.197          player2_debounce/flipflops_0
+    ----------------------------------------
+    Total                      1.378ns (1.021ns logic, 0.357ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'flasher_clock_divider/temp'
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Offset:              2.823ns (Levels of Logic = 2)
+  Source:            highscore<3> (PAD)
+  Destination:       scoreDecoder_instance/temp (FF)
+  Destination Clock: flasher_clock_divider/temp rising
+
+  Data Path: highscore<3> to scoreDecoder_instance/temp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.824   0.925  highscore_3_IBUF (highscore_3_IBUF)
+     LUT4:I0->O            1   0.561   0.357  scoreDecoder_instance/temp_and000021 (scoreDecoder_instance/temp_and0000)
+     FDE:CE                    0.156          scoreDecoder_instance/temp
+    ----------------------------------------
+    Total                      2.823ns (1.541ns logic, 1.282ns route)
+                                       (54.6% logic, 45.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sevensegment_instance/SlowClock/temp'
+  Total number of paths / destination ports: 220 / 15
+-------------------------------------------------------------------------
+Offset:              8.727ns (Levels of Logic = 5)
+  Source:            sevensegment_instance/Driver/counter_0 (FF)
+  Destination:       SevenSegBusMod<7> (PAD)
+  Source Clock:      sevensegment_instance/SlowClock/temp rising
+
+  Data Path: sevensegment_instance/Driver/counter_0 to SevenSegBusMod<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             27   0.495   1.180  sevensegment_instance/Driver/counter_0 (sevensegment_instance/Driver/counter_0)
+     LUT3:I0->O            1   0.561   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_4 (sevensegment_instance/Driver/Mmux_sevenSegValue_4)
+     MUXF5:I1->O           1   0.229   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_3_f5 (sevensegment_instance/Driver/Mmux_sevenSegValue_3_f5)
+     MUXF6:I1->O           7   0.239   0.710  sevensegment_instance/Driver/Mmux_sevenSegValue_2_f6 (sevensegment_instance/sevenSegValue<0>)
+     LUT4:I0->O            1   0.561   0.357  sevensegment_instance/Decoder/Mrom_outValue41 (SevenSegBusMod_4_OBUF)
+     OBUF:I->O                 4.396          SevenSegBusMod_4_OBUF (SevenSegBusMod<4>)
+    ----------------------------------------
+    Total                      8.727ns (6.481ns logic, 2.246ns route)
+                                       (74.3% logic, 25.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ending_clock_divider/temp1'
+  Total number of paths / destination ports: 140 / 7
+-------------------------------------------------------------------------
+Offset:              8.364ns (Levels of Logic = 5)
+  Source:            Inst_display_controller/currentC_FSM_FFd1 (FF)
+  Destination:       SevenSegBusMod<7> (PAD)
+  Source Clock:      ending_clock_divider/temp1 rising
+
+  Data Path: Inst_display_controller/currentC_FSM_FFd1 to SevenSegBusMod<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.495   0.816  Inst_display_controller/currentC_FSM_FFd1 (Inst_display_controller/currentC_FSM_FFd1)
+     LUT3:I2->O            1   0.561   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_52 (sevensegment_instance/Driver/Mmux_sevenSegValue_52)
+     MUXF5:I0->O           1   0.229   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_3_f5_0 (sevensegment_instance/Driver/Mmux_sevenSegValue_3_f51)
+     MUXF6:I1->O           7   0.239   0.710  sevensegment_instance/Driver/Mmux_sevenSegValue_2_f6_0 (sevensegment_instance/sevenSegValue<1>)
+     LUT4:I0->O            1   0.561   0.357  sevensegment_instance/Decoder/Mrom_outValue31 (SevenSegBusMod_3_OBUF)
+     OBUF:I->O                 4.396          SevenSegBusMod_3_OBUF (SevenSegBusMod<3>)
+    ----------------------------------------
+    Total                      8.364ns (6.481ns logic, 1.883ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_clock_divider/temp1'
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Offset:              9.717ns (Levels of Logic = 6)
+  Source:            selected_mode_1 (FF)
+  Destination:       SevenSegBusMod<7> (PAD)
+  Source Clock:      Inst_clock_divider/temp1 rising
+
+  Data Path: selected_mode_1 to SevenSegBusMod<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            43   0.495   1.184  selected_mode_1 (selected_mode_1)
+     LUT3:I0->O            1   0.561   0.423  Inst_display_controller/currentD<1>1 (display4<1>)
+     LUT3:I1->O            1   0.562   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_52 (sevensegment_instance/Driver/Mmux_sevenSegValue_52)
+     MUXF5:I0->O           1   0.229   0.000  sevensegment_instance/Driver/Mmux_sevenSegValue_3_f5_0 (sevensegment_instance/Driver/Mmux_sevenSegValue_3_f51)
+     MUXF6:I1->O           7   0.239   0.710  sevensegment_instance/Driver/Mmux_sevenSegValue_2_f6_0 (sevensegment_instance/sevenSegValue<1>)
+     LUT4:I0->O            1   0.561   0.357  sevensegment_instance/Decoder/Mrom_outValue31 (SevenSegBusMod_3_OBUF)
+     OBUF:I->O                 4.396          SevenSegBusMod_3_OBUF (SevenSegBusMod<3>)
+    ----------------------------------------
+    Total                      9.717ns (7.043ns logic, 2.674ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.03 secs
+ 
+--> 
+
+Total memory usage is 4538032 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   92 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
